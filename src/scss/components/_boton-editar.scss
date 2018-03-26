@@ -1,0 +1,15 @@
+.editar {
+    width: 40px;
+    height: 40px;
+    background-color: transparentize($color-violet, 0.3);
+    position: fixed;
+    bottom: 55px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: $font-size-h1;
+    color: $text-light;
+    cursor: pointer;
+}

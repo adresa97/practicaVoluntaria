@@ -1,0 +1,31 @@
+// Font families
+$main-font-family: 'Barlow', sans-serif;
+$title-font-family: 'Cairo', sans-serif;
+
+// Font sizes
+$font-size-base: 15px;
+$font-size-h1: $font-size-base + 15px;
+$font-size-h2: $font-size-base + 12px;
+$font-size-h3: $font-size-base + 9px;
+$font-size-h4: $font-size-base + 6px;
+$font-size-h5: $font-size-base + 3px;
+
+// Base colors
+$color-violet: #57347a;
+$color-violet-light: #6c5b7c;
+$color-dark-yellow: rgb(255, 255, 151);
+$color-light-yellow: rgb(255, 255, 242);
+
+// Main components colors
+$text-light: #f3f3f3;
+$text-dark: rgb(20, 20, 20);
+
+// Responsive
+// 667 iphone landscape. 768 ipad portrait
+$mobile-portrait-width: 414px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;
+
+// Forms variables
+

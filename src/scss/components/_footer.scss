@@ -1,0 +1,30 @@
+.web-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background: fade-out($color-violet, 0.12);
+    position: fixed;
+    z-index: 1;
+    bottom: 0px;
+    width: 100%;
+    font-size: $font-size-h5;
+    text-align: center;
+    padding: 15px;
+    transition: 0.25s;
+
+    &:hover {
+        background: $color-violet;
+    }
+
+    .web-title {
+        font-family: $title-font-family;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    a {
+        text-decoration: none;
+        color: $text-light;
+    }
+}

@@ -1,0 +1,25 @@
+<form novalidate class="film-form" hidden="hidden">
+
+    <div class="ui-status error">Se ha producido un error</div>
+
+    <div class="ui-status loading">Guardando Película...</div>
+
+    <div class="ui-status ideal">
+        <div class="form-control-group">
+            <label for="director" class="negrita">Director</label>
+            <input id="director" type="text" name="director" placeholder="Director" required>
+        </div>
+        <div class="form-control-group">
+            <label for="title" class="negrita">Título</label>
+            <input id="title" type="text" name="title" placeholder="Título" required>
+        </div>
+        <div class="form-control-group">
+            <label for="cover_url" class="negrita">Cover URL</label>
+            <input id="cover_url" type="url" name="cover_url" placeholder="http://...">
+        </div>
+        <div class="form-control-group">
+            <button>Save film</button>
+        </div>
+    </div>
+
+</form>

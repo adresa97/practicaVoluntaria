@@ -1,0 +1,63 @@
+.web-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background: fade-out($color-violet, 0.12);
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 16px 8px 16px 0px;
+    transition: 0.25s;
+
+    @include if-mobile-landscape {
+        justify-content: flex-end;
+    }
+
+    &:hover {
+        background: $color-violet;
+    }
+
+    .web-title {
+        display: flex;
+        width: 40%;
+        margin-left: 15px;
+        font-family: $title-font-family;
+        font-size: $font-size-h1;
+        font-weight: bold;
+        text-transform: uppercase;  
+
+        @include if-mobile-landscape {
+            width: 38%;
+        }
+    }
+
+    .form-search {
+        display: flex;
+        align-items: center;
+        font-size: $font-size-h5;
+        text-align: center;
+        transition: color 0.25s;
+
+        a:hover {
+            color: $color-dark-yellow
+        }
+
+        .busquedas {
+            background: $color-light-yellow;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: $color-light-yellow;
+            color: $text-dark;
+            width: 100px;
+            margin-left: 15px;
+            padding: 2px;
+
+            @include if-mobile-landscape {
+                width: 150px;
+            }
+        }
+    }
+}

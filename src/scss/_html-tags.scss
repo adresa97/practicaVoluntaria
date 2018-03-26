@@ -1,0 +1,22 @@
+body {
+    background: $color-light-yellow;
+    font-family: $main-font-family;
+    font-size: $font-size-base;
+    color: $text-light;
+    line-height: $font-size-base + 3px;
+    padding-top: 60px;
+}
+
+a {
+    color: $text-light;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.cursiva {
+    font-style: italic;
+}

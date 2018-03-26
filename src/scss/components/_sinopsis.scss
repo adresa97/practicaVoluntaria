@@ -1,0 +1,126 @@
+.sinopsis {
+    margin-top: 15px;
+    
+    @include if-mobile-landscape {
+        margin-top: 0px;
+    }
+
+    @include if-tablet-portrait {
+        margin-top: 35px;
+    }
+
+    .ui-status {
+        display: none;
+    }
+
+    &.empty {
+        .ui-status.empty {
+            display: block;
+        }
+    }
+
+    &.loading {
+        .ui-status.loading {
+            display: block;
+        }
+    }
+
+    &.error {
+        .ui-status.error {
+            display: block;
+        }
+    }
+
+    &.ideal {
+        .ui-status.ideal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include if-mobile-landscape {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    &.empty, &.loading, &.error {
+        font-size: $font-size-h5;
+        text-align: center;
+        color: $text-dark;
+        padding: 50px;
+    }
+
+    .title-img {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        @include if-mobile-landscape {
+            width: 25%;
+        }
+
+        @include if-desktop {
+            width: 30%;
+        }
+
+        #cover {
+            margin-bottom: 20px;
+
+            @include if-mobile-landscape {
+                margin-bottom: 5px;
+            }
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+
+    .sinopsis-txt {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        box-sizing: border-box;
+        background: $color-dark-yellow;
+        margin-top: 15px;
+        width: 90%;
+        border-radius: 20px;
+        color: $text-dark;
+        padding: 15px;
+
+        @include if-mobile-landscape {
+            margin-top: 0px;
+            margin-left: 15px;
+            width: 50%;
+        }
+
+        #enlaces {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            
+            a {
+                font-family: $main-font-family;
+                color: $color-violet;
+            }
+
+            a:hover {
+                color: $color-violet-light;
+            }
+        }
+
+        h1 {
+            align-self: center;
+            font-family: $title-font-family;
+            font-size: $font-size-h5;
+        }
+
+        p {
+            margin-top: 8px;
+        }
+    }
+}
